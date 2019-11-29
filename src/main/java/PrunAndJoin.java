@@ -18,17 +18,12 @@ public class PrunAndJoin {
             String filename = fileSplit.getPath().getName();
             String[] extract = value.toString().split("\t");
 
-            if (filename.equals("forum_users.tsv")) {
-                if (!extract[0].equals("\"user_ptr_id\"")){
+            if (filename.equals("forum_users.tsv") && !extract[0].equals("\"user_ptr_id\"")) {
                     context.write(new Text(extract[0].substring(1, extract[0].length() - 1)), new Text("F" + extract[1].substring(1, extract[1].length() - 1)));
-                }
                     //context.write(new Text(extract[0].replaceAll("\"","")), new Text("F" + extract[1].replaceAll("\"","")));
-
-            } else {
-                if (extract.length == 9 && !extract[0].equals("\"id\"")) {
-                    //context.write(new Text(extract[3].replaceAll("\"","")), new Text("T" + extract[8].replaceAll("\"","")));
-                    context.write(new Text(extract[3].substring(1, extract[3].length() - 1)), new Text("T" + extract[8].substring(1, extract[8].length() - 1)));
-                }
+            } else if (extract.length == 9 && !extract[0].equals("\"id\"")) {
+                //context.write(new Text(extract[3].replaceAll("\"","")), new Text("T" + extract[8].replaceAll("\"","")));
+                context.write(new Text(extract[3].substring(1, extract[3].length() - 1)), new Text("T" + extract[8].substring(1, extract[8].length() - 1)));
             }
         }
     }

@@ -17,6 +17,9 @@
   </component>
   <component name="ProjectId" id="1UFOJfAfAwIGEj9srTpqMbYxOsL" />
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
@@ -31,19 +34,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PrunAndJoin">
-    <configuration name="Join" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Join" />
-      <module name="Lab7" />
-      <option name="PROGRAM_PARAMETERS" value="ip3.2 op3.2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.WCTopN">
     <configuration name="MeanMaxTemperature" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MeanMaxTemperature" />
       <module name="Lab7" />
-      <option name="PROGRAM_PARAMETERS" value="ip3.1 op3.1" />
+      <option name="PROGRAM_PARAMETERS" value="IP_MMT OP_MMT" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -51,7 +46,15 @@
     <configuration name="PrunAndJoin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PrunAndJoin" />
       <module name="Lab7" />
-      <option name="PROGRAM_PARAMETERS" value="ip3.2 op3.2" />
+      <option name="PROGRAM_PARAMETERS" value="IP_PAJ OP_PAJ" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WCTopN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WCTopN" />
+      <module name="Lab7" />
+      <option name="PROGRAM_PARAMETERS" value="IP_WC OP_WC" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -59,12 +62,12 @@
     <list>
       <item itemvalue="Application.MeanMaxTemperature" />
       <item itemvalue="Application.PrunAndJoin" />
-      <item itemvalue="Application.Join" />
+      <item itemvalue="Application.WCTopN" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WCTopN" />
         <item itemvalue="Application.PrunAndJoin" />
-        <item itemvalue="Application.Join" />
         <item itemvalue="Application.MeanMaxTemperature" />
       </list>
     </recent_temporary>
